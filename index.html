@@ -6,7 +6,9 @@
     <title>Sliem GTeck | Links</title>
     <style>
         body {
-            background-color: #0d0d12;
+            background: linear-gradient(-45deg, #0d0d12, #2a0845, #050505, #3a0066);
+            background-size: 400% 400%;
+            animation: moveLight 12s ease infinite;
             color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
@@ -14,6 +16,13 @@
             align-items: center;
             margin: 0;
             padding: 50px 20px;
+            min-height: 100vh;
+        }
+
+        @keyframes moveLight {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         .profile-img {
             width: 150px;
@@ -63,13 +72,13 @@
     <img src="profile.jpg" alt="Sliem GTeck" class="profile-img">
 
     <h1>Sliem GTeck</h1>
-    <p>Software Engineer & Tech Enthusiast</p>
+    <p>Gaming & Teck</p>
 
     <!-- حط لينكاتك هنا مكان الـ # -->
-    <a href="#" class="link-btn">Khamsat Services</a>
-    <a href="#" class="link-btn">GitHub</a>
-    <a href="#" class="link-btn">LinkedIn</a>
-    <a href="#" class="link-btn">Nafezly Profile</a>
+    <a href="https://www.tiktok.com/@tanjirogmr" class="link-btn">Tik Tok</a>
+    <a href="#https://www.youtube.com/@user-tanjiro" class="link-btn">Youtube</a>
+    <a href="www.linkedin.com/in/sliem-mohamed" class="link-btn">LinkedIn</a>
+    <a href="https://open.spotify.com/user/31gnnv3flmtj3igce4cyiioown54?si=857eafd6f5fc49cf" class="link-btn">Spotify</a>
 
 </body>
 </html>
