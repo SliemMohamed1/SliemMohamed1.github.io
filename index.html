@@ -6,9 +6,12 @@
     <title>Sliem GTeck | Links</title>
     <style>
         body {
-            background: linear-gradient(-45deg, #0d0d12, #2a0845, #050505, #3a0066);
-            background-size: 400% 400%;
-            animation: moveLight 12s ease infinite;
+            
+            background-image: linear-gradient(rgba(13, 13, 18, 0.8), rgba(42, 8, 69, 0.8)), url('bg.jpg');
+            background-size: 115%; /* كبرنا الصورة سيكا عشان نديها مساحة تتحرك */
+            background-position: center;
+            background-attachment: fixed;
+            animation: panBackground 15s ease-in-out infinite alternate;
             color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
@@ -19,10 +22,10 @@
             min-height: 100vh;
         }
 
-        @keyframes moveLight {
+       
+        @keyframes panBackground {
             0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
         }
         .profile-img {
             width: 150px;
@@ -68,16 +71,16 @@
 </head>
 <body>
 
-    <!-- مسار صورة البروفايل بتاعتك -->
+    
     <img src="profile.jpg" alt="Sliem GTeck" class="profile-img">
 
     <h1>Sliem GTeck</h1>
     <p>Gaming & Teck</p>
 
-    <!-- حط لينكاتك هنا مكان الـ # -->
+    
     <a href="https://www.tiktok.com/@tanjirogmr" class="link-btn">Tik Tok</a>
-    <a href="#https://www.youtube.com/@user-tanjiro" class="link-btn">Youtube</a>
-    <a href="www.linkedin.com/in/sliem-mohamed" class="link-btn">LinkedIn</a>
+    <a href="https://www.youtube.com/@user-tanjiro" class="link-btn">Youtube</a>
+    <a href="https://www.linkedin.com/in/sliem-mohamed" class="link-btn">LinkedIn</a>
     <a href="https://open.spotify.com/user/31gnnv3flmtj3igce4cyiioown54?si=857eafd6f5fc49cf" class="link-btn">Spotify</a>
 
 </body>
